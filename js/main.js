@@ -288,3 +288,81 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
     );
   });
 })();
+
+/* ============================================================
+   LIGHTBOX
+============================================================ */
+(function initLightbox() {
+  const lb        = document.getElementById('lightbox');
+  const lbImg     = document.getElementById('lb-img');
+  const lbCaption = document.getElementById('lb-caption');
+  const lbCounter = document.getElementById('lb-counter');
+  const btnClose  = document.getElementById('lb-close');
+  const btnPrev   = document.getElementById('lb-prev');
+  const btnNext   = document.getElementById('lb-next');
+
+  // Collect all gallery images in document order
+  const imgs = Array.from(
+    document.querySelectorAll('.gi img, .strip-item img')
+  );
+
+  let current = 0;
+
+  function open(index) {
+    current = index;
+    lbImg.src = imgs[current].src;
+    lbImg.alt = imgs[current].alt;
+    lbCaption.textContent = imgs[current].alt;
+    lbCounter.textContent = `${current + 1} / ${imgs.length}`;
+    lb.classList.add('open');
+    lb.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function navigate(dir) {
+    lbImg.classList.add('fade');
+    setTimeout(() => {
+      current = (current + dir + imgs.length) % imgs.length;
+      lbImg.src = imgs[current].src;
+      lbImg.alt = imgs[current].alt;
+      lbCaption.textContent = imgs[current].alt;
+      lbCounter.textContent = `${current + 1} / ${imgs.length}`;
+      lbImg.classList.remove('fade');
+    }, 180);
+  }
+
+  // Open on image click
+  imgs.forEach((img, i) => {
+    img.parentElement.addEventListener('click', () => open(i));
+  });
+
+  btnClose.addEventListener('click', close);
+  btnPrev.addEventListener('click', () => navigate(-1));
+  btnNext.addEventListener('click', () => navigate(1));
+
+  // Close on backdrop click
+  lb.addEventListener('click', e => {
+    if (e.target === lb) close();
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
+  });
+
+  // Touch swipe
+  let touchStartX = 0;
+  lb.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) navigate(dx < 0 ? 1 : -1);
+  });
+})();
