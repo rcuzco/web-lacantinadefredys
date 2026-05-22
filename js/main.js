@@ -53,6 +53,10 @@ const RESTAURANT = {
   // Address display
   const addrEl = document.getElementById('address-display');
   if (addrEl) addrEl.textContent = RESTAURANT.address;
+
+  // Copyright year
+  const yearEl = document.getElementById('copy-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
 
 /* ============================================================
