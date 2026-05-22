@@ -1,4 +1,4 @@
-# Manual de mantenimiento — La Cantina de Fredy's
+﻿# Manual de mantenimiento — La Cantina de Fredy's
 
 **Para:** responsable de contenidos del sitio web  
 **Nivel requerido:** no se necesitan conocimientos de programación  
@@ -55,8 +55,9 @@ web-restaurante/
 │   └── main.js         ← Aquí están el teléfono, WhatsApp y dirección
 │
 └── assets/
-    └── raw/
-        └── photos_webp/    ← Aquí van las fotos de la galería
+    ├── images/       ← Aquí van TODAS las imágenes del sitio
+    ├── videos/       ← Aquí van los vídeos
+    └── documents/    ← Aquí va el menú PDF
 ```
 
 > **Regla de oro:** Si no está explicado en este manual, no lo toques. Un cambio en el lugar equivocado puede romper la página.
@@ -151,7 +152,7 @@ Los platos aparecen como tarjetas en la sección "Platos para enamorarse". Cada 
 ```html
 <article class="dish-card">
   <div class="dish-img-wrap">
-    <img src="assets/raw/photos_webp/cantina-photo-08.webp"
+    <img src="assets/images/cantina-photo-08.webp"
          alt="Totopos con guacamole casero"
          loading="lazy" decoding="async">
     <span class="dish-tag tag-compartir">Para compartir</span>
@@ -223,18 +224,18 @@ Para cambiar la etiqueta, modifica **tanto** la clase como el texto. Por ejemplo
 La imagen se indica en la línea `src=` dentro del bloque `<img ...>`:
 
 ```html
-<img src="assets/raw/photos_webp/cantina-photo-08.webp"
+<img src="assets/images/cantina-photo-08.webp"
      alt="Descripción de la foto"
      loading="lazy" decoding="async">
 ```
 
 Para cambiar la imagen:
 
-1. Copia el nuevo archivo de imagen dentro de la carpeta `assets/raw/photos_webp/`.
+1. Copia el nuevo archivo de imagen dentro de la carpeta `assets/images/`.
 2. Escribe el nombre exacto del archivo (incluyendo la extensión `.webp` o `.jpg`) en la ruta `src=`:
 
 ```html
-<img src="assets/raw/photos_webp/mi-nueva-foto.webp"
+<img src="assets/images/mi-nueva-foto.webp"
      alt="Descripción breve de la nueva foto"
      loading="lazy" decoding="async">
 ```
@@ -399,7 +400,7 @@ Cada foto de la cuadrícula tiene esta estructura:
 
 ```html
 <div class="gi">
-  <img src="assets/raw/photos_webp/cantina-photo-13.webp"
+  <img src="assets/images/cantina-photo-13.webp"
        alt="Interior del restaurante La Cantina de Fredy's con murales mexicanos"
        loading="lazy" decoding="async">
   <div class="gi-overlay"></div>
@@ -408,7 +409,7 @@ Cada foto de la cuadrícula tiene esta estructura:
 
 Para cambiar la foto:
 
-1. Copia el nuevo archivo de imagen en la carpeta `assets/raw/photos_webp/`.
+1. Copia el nuevo archivo de imagen en la carpeta `assets/images/`.
 2. Localiza la foto que quieres sustituir buscando (**Ctrl + F** / **Cmd + F**) el nombre del archivo actual.
 3. Cambia el nombre del archivo en `src=` por el nombre del nuevo archivo.
 4. Actualiza el texto del `alt=` describiendo brevemente la nueva foto.
@@ -419,11 +420,11 @@ Las fotos de la tira tienen este formato:
 
 ```html
 <div class="strip-item" role="listitem">
-  <img src="assets/raw/photos_webp/cantina-photo-01.webp" alt="Tacos al pastor" loading="lazy" decoding="async">
+  <img src="assets/images/cantina-photo-01.webp" alt="Tacos al pastor" loading="lazy" decoding="async">
 </div>
 ```
 
-El procedimiento es el mismo: copia la foto nueva a `assets/raw/photos_webp/`, localiza la línea y cambia el `src=` y el `alt=`.
+El procedimiento es el mismo: copia la foto nueva a `assets/images/`, localiza la línea y cambia el `src=` y el `alt=`.
 
 > **Consejo:** Para que las fotos carguen rápido, usa formato `.webp`. Si solo tienes la foto en `.jpg` o `.png`, también funciona, pero el sitio cargará un poco más lento.
 
@@ -502,15 +503,15 @@ Elimina todo lo que hay **dentro** del `<div class="map-frame gsap-fade" id="map
 
 ## SECCIÓN 9 — Menú PDF descargable
 
-**Archivo:** `assets/raw/`
+**Archivo:** `assets/images/`
 
-El botón "Descargar menú PDF" está enlazado al archivo `assets/raw/MENU LA CANTINA DE FREDYS.pdf`.
+El botón "Descargar menú PDF" está enlazado al archivo `assets/documents/MENU LA CANTINA DE FREDYS.pdf`.
 
 Para actualizar el menú en PDF:
 
 1. Prepara el nuevo archivo PDF del menú.
 2. Renómbralo exactamente como: `MENU LA CANTINA DE FREDYS.pdf` (respetando mayúsculas, espacios y tildes).
-3. Copia el archivo en la carpeta `assets/raw/`, sustituyendo el anterior.
+3. Copia el archivo en la carpeta `assets/images/`, sustituyendo el anterior.
 
 No es necesario cambiar nada en `index.html`.
 
