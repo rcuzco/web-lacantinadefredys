@@ -1,0 +1,11 @@
+# Claude Code local data
+.claude/
+
+# Source/development docs not needed for deployment
+docs/00-business-info/
+docs/02-prompts/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

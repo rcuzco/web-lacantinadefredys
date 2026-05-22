@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Primary -->
+  <title>La Cantina de Fredy's | Restaurante Mexicano, Tacos, Fajitas y Margaritas</title>
+  <meta name="description" content="La Cantina de Fredy's: restaurante mexicano con tacos, fajitas, quesadillas, margaritas, menú del día y platos para compartir. Sabor, color y ambiente de cantina mexicana.">
+  <meta name="keywords" content="restaurante mexicano, tacos, fajitas, quesadillas, margaritas, comida mexicana, menú del día, cantina mexicana, comida para compartir, birria, cochinita pibil, micheladas">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lacantinadefredy s.com"> <!-- TODO: Actualizar con URL real -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="La Cantina de Fredy's | Restaurante Mexicano">
+  <meta property="og:description" content="Tacos, fajitas, margaritas y antojitos mexicanos con alma de cantina. ¡Ven a disfrutar México en cada bocado!">
+  <meta property="og:image" content="assets/raw/photos_webp/cantina-photo-05.webp">
+  <meta property="og:url" content="https://lacantinadefredy s.com"> <!-- TODO: URL real -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="La Cantina de Fredy's">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Cantina de Fredy's | Restaurante Mexicano">
+  <meta name="twitter:description" content="Tacos, fajitas, margaritas y antojitos. Sabor mexicano auténtico.">
+  <meta name="twitter:image" content="assets/raw/photos_webp/cantina-photo-05.webp">
+
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#FFC400">
+  <link rel="icon" type="image/png" href="assets/raw/logo_cantina_fredys_transparent.png">
+
+  <!-- Preconnect CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JSON-LD Schema.org Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Cantina de Fredy's",
+    "description": "Restaurante mexicano auténtico con tacos, fajitas, quesadillas, margaritas, menú del día y platos para compartir.",
+    "image": "assets/raw/photos_webp/cantina-photo-05.webp",
+    "telephone": "+34XXXXXXXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dirección pendiente de confirmar",
+      "addressLocality": "Madrid",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "13:00",
+        "closes": "16:00"
+      }
+    ],
+    "servesCuisine": "Mexican",
+    "priceRange": "€€",
+    "hasMenu": "assets/raw/MENU%20LA%20CANTINA%20DE%20FREDYS.pdf",
+    "url": "https://lacantinadefredy s.com"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header" id="header">
+  <a href="#inicio" class="logo-link" aria-label="La Cantina de Fredy's — inicio">
+    <img src="assets/raw/logo_cantina_fredys_transparent.webp"
+         alt="La Cantina de Fredy's logo"
+         width="120" height="46">
+  </a>
+
+  <nav class="nav-desktop" aria-label="Navegación principal">
+    <a href="#platos">Platos</a>
+    <a href="#menu">Menú</a>
+    <a href="#menu-del-dia">Menú del día</a>
+    <a href="#galeria">Galería</a>
+    <a href="#horario">Horario</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="btn-theme" id="btn-theme" aria-label="Cambiar tema">
+      <i class="fa-solid fa-sun" id="theme-icon"></i>
+      <span id="theme-label">Modo claro</span>
+    </button>
+    <a href="#menu" class="btn btn-primary btn-sm">
+      <i class="fa-solid fa-utensils"></i> Ver menú
+    </a>
+    <a href="#wa-link" class="btn btn-wa btn-sm" id="header-wa">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Menú móvil">
+  <a href="#platos">Platos destacados</a>
+  <a href="#menu">Carta completa</a>
+  <a href="#menu-del-dia">Menú del día</a>
+  <a href="#galeria">Galería</a>
+  <a href="#horario">Horario</a>
+  <a href="#contacto">Contacto</a>
+  <div class="nav-mobile-actions">
+    <a href="#menu" class="btn btn-primary">
+      <i class="fa-solid fa-utensils"></i> Ver menú
+    </a>
+    <a href="#wa-link" class="btn btn-wa" id="mobile-wa">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+</div>
+
+<main>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero" id="inicio" aria-label="Inicio">
+  <div class="hero-bg">
+    <!-- TODO: Cambia video1.mp4 por el video más representativo del restaurante -->
+    <video autoplay muted loop playsinline
+           poster="assets/raw/photos_webp/cantina-photo-04.webp"
+           aria-hidden="true">
+      <source src="docs/01-images/video1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-content">
+    <img class="hero-logo gsap-fade"
+         src="assets/raw/logo_cantina_fredys_transparent.webp"
+         alt="La Cantina de Fredy's"
+         width="130" height="100">
+
+    <span class="hero-badge gsap-fade">🌮 Restaurante Mexicano Auténtico</span>
+
+    <h1 class="hero-title gsap-fade">
+      La Cantina<br><span class="accent">de Fredy's</span>
+    </h1>
+
+    <p class="hero-subtitle gsap-fade">
+      México se sirve aquí: tacos, fajitas, margaritas y antojitos para disfrutar sin prisa.
+    </p>
+
+    <div class="hero-actions gsap-fade">
+      <a href="#menu" class="btn btn-primary">
+        <i class="fa-solid fa-book-open"></i> Ver menú completo
+      </a>
+      <a href="#wa-link" class="btn btn-wa" id="hero-wa">
+        <i class="fa-brands fa-whatsapp"></i> Enviar WhatsApp
+      </a>
+      <a href="#contacto" class="btn btn-outline">
+        <i class="fa-solid fa-location-dot"></i> Cómo llegar
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     PLATOS DESTACADOS
+============================================================ -->
+<section class="platos" id="platos" aria-labelledby="platos-title">
+  <div class="container">
+    <header class="platos-header">
+      <span class="eyebrow gsap-fade">Lo mejor de la carta</span>
+      <h2 class="section-title gsap-fade" id="platos-title">Platos para enamorarse</h2>
+      <p class="section-sub gsap-fade">
+        De los antojitos para compartir hasta los tacos y fajitas que todos piden. Sabor mexicano auténtico en cada bocado.
+      </p>
+    </header>
+
+    <div class="dishes-grid" id="dishes-grid">
+
+      <!-- TODO: Sustituir imágenes cuando se tengan fotos específicas de cada plato -->
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-08.webp"
+               alt="Totopos con guacamole casero"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-compartir">Para compartir</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Totopos con Guacamole</h3>
+          <p class="dish-desc">Totopos crujientes de maíz con guacamole fresco preparado al momento, pico de gallo y jalapeño.</p>
+          <div class="dish-footer">
+            <!-- TODO: Verificar precio real -->
+            <span class="dish-price">8.50 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/to-use/img4.png"
+               alt="Totopos La Cantina — el plato estrella"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-especialidad">Especialidad</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Totopos "La Cantina"</h3>
+          <p class="dish-desc">Nuestro plato estrella: totopos cubiertos de queso fundido, birria deshebrada, guacamole y pico de gallo. Imprescindible.</p>
+          <div class="dish-footer">
+            <span class="dish-price">9.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-04.webp"
+               alt="Flautas doradas de pollo con crema y guacamole"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-especialidad">Antojito</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Flautas Doradas de Pollo</h3>
+          <p class="dish-desc">Tortillas rellenas de pollo condimentado, fritas hasta quedar crujientes. Servidas con crema y guacamole.</p>
+          <div class="dish-footer">
+            <span class="dish-price">9.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/to-use/img2.png"
+               alt="Fajitas de pollo con arroz, tortillas y verduras salteadas"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-especialidad">Especialidad</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Fajitas de Pollo</h3>
+          <p class="dish-desc">Tiras de pollo marinado salteadas con cebolla, pimientos de colores y queso. Con arroz, tortillas y salsas.</p>
+          <div class="dish-footer">
+            <span class="dish-price">13.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-01.webp"
+               alt="Tacos al pastor con piña, cebolla y cilantro"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-tacos">Tacos</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Tacos al Pastor</h3>
+          <p class="dish-desc">El clásico: carne de cerdo marinada con achiote, piña, cebolla y cilantro. Acompañados de dos salsas.</p>
+          <div class="dish-footer">
+            <span class="dish-price">11.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-09.webp"
+               alt="Birria de ternera — guiso tradicional mexicano"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-especialidad">Especialidad</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Birria de Ternera</h3>
+          <p class="dish-desc">Ternera guisada a fuego lento con chiles y especias. Deshebrada, jugosa y llena de sabor tradicional.</p>
+          <div class="dish-footer">
+            <span class="dish-price">12.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-06.webp"
+               alt="Quesadillas mexicanas con relleno de pollo o ternera"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-compartir">Para compartir</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Quesadillas</h3>
+          <p class="dish-desc">Tortillas de maíz con queso fundido y tu relleno favorito: pollo, ternera o vegetariano. Con guacamole.</p>
+          <div class="dish-footer">
+            <span class="dish-price">9.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-05.webp"
+               alt="Margaritas con borde de tajín y rodaja de limón"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-bebidas">Bebidas</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Margaritas</h3>
+          <p class="dish-desc">La margarita de La Cantina: tequila, triple seco y limón natural. Con o sin picante en el borde. ¡Salud!</p>
+          <div class="dish-footer">
+            <span class="dish-price">7.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-14.webp"
+               alt="Michelada con cerveza Corona y tajín"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-bebidas">Bebidas</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Micheladas</h3>
+          <p class="dish-desc">Cerveza mexicana con jugo de limón, salsas y especias en vaso de tajín. Fresca, picante e irresistible.</p>
+          <div class="dish-footer">
+            <span class="dish-price">6.50 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/to-use/img7.png"
+               alt="Aguas frescas mexicanas artesanales"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-bebidas">Bebidas</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Aguas Frescas</h3>
+          <p class="dish-desc">Preparadas cada día con fruta natural: horchata, limón, tamarindo, jamaica. Refrescantes y sin alcohol.</p>
+          <div class="dish-footer">
+            <span class="dish-price">3.50 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-07.webp"
+               alt="Fajitas de ternera con tortillas de maíz"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-especialidad">Especialidad</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Fajitas de Ternera</h3>
+          <p class="dish-desc">Tiras de ternera al ajillo con verduras salteadas, queso derretido, arroz y tortillas de maíz caseras.</p>
+          <div class="dish-footer">
+            <span class="dish-price">14.90 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/raw/photos_webp/cantina-photo-12.webp"
+               alt="Margarita frozen con tajín y limón, máquinas de frío al fondo"
+               loading="lazy" decoding="async">
+          <span class="dish-tag tag-bebidas">Bebidas</span>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Margarita Frozen</h3>
+          <p class="dish-desc">La margarita helada de la casa: cremosa, fría y con el toque de tajín que la hace única. Solo para valientes.</p>
+          <div class="dish-footer">
+            <span class="dish-price">8.50 €</span>
+            <button class="dish-btn" onclick="document.querySelector('#menu-del-dia').scrollIntoView({behavior:'smooth'})">Ver carta</button>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /dishes-grid -->
+  </div>
+</section>
+
+<!-- ============================================================
+     MENÚ COMPLETO
+============================================================ -->
+<section class="menu-section" id="menu" aria-labelledby="menu-title">
+  <div class="container">
+    <div class="menu-inner">
+
+      <div>
+        <span class="eyebrow gsap-fade">Carta completa</span>
+        <h2 class="section-title gsap-fade" id="menu-title">Todo lo que necesitas saber antes de llegar</h2>
+
+        <div class="menu-categories">
+
+          <div class="menu-cat gsap-fade">
+            <p class="menu-cat-title">🌮 Antojitos para compartir</p>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="mi-name">Totopos con guacamole casero</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">8.50 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Totopos "La Cantina" con birria</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">9.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Flautas doradas de pollo (x3)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">9.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Quesadillas (pollo, ternera o veggie)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">9.90 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cat gsap-fade">
+            <p class="menu-cat-title">🥩 Platos principales</p>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="mi-name">Fajitas de pollo</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">13.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Fajitas de ternera</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">14.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Chilaquiles auténticos</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">10.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Hamburguesa Cantina</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">12.90 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cat gsap-fade">
+            <p class="menu-cat-title">🌮 Tacos mexicanos</p>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="mi-name">Tacos al pastor (x3)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">11.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Tacos de cochinita pibil (x3)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">11.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Birria de ternera</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">12.90 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cat gsap-fade">
+            <p class="menu-cat-title">🍹 Bebidas mexicanas</p>
+            <div class="menu-items">
+              <div class="menu-item">
+                <span class="mi-name">Margarita clásica</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">7.90 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Margarita frozen</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">8.50 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Michelada</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">6.50 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Aguas frescas (limón, jamaica, horchata…)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">3.50 €</span>
+              </div>
+              <div class="menu-item">
+                <span class="mi-name">Cerveza mexicana (Corona, Pacífico, Modelo)</span>
+                <span class="mi-dots"></span>
+                <span class="mi-price">3.90 €</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /menu-categories -->
+      </div>
+
+      <!-- Panel lateral -->
+      <aside class="menu-panel gsap-fade" aria-label="Descarga el menú completo">
+        <h3>¿Quieres ver la carta completa?</h3>
+        <p>Descarga nuestro menú en PDF o consúltanos por WhatsApp. También puedes preguntarnos por platos del día y disponibilidad.</p>
+
+        <div class="menu-panel-btns">
+          <a href="assets/raw/MENU%20LA%20CANTINA%20DE%20FREDYS.pdf"
+             target="_blank"
+             rel="noopener"
+             class="btn btn-primary"
+             download>
+            <i class="fa-solid fa-file-pdf"></i> Ver carta completa
+          </a>
+          <a href="assets/raw/MENU%20LA%20CANTINA%20DE%20FREDYS.pdf"
+             download
+             class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> Descargar menú PDF
+          </a>
+          <a href="#wa-link" class="btn btn-wa" id="menu-wa">
+            <i class="fa-brands fa-whatsapp"></i> Preguntar por alérgenos
+          </a>
+        </div>
+
+        <div class="allergen-box">
+          <strong>⚠ Alérgenos e intolerancias:</strong><br>
+          Consulta al personal sobre alérgenos y disponibilidad de platos. Adaptamos algunos platos para celíacos e intolerancias bajo petición.
+        </div>
+      </aside>
+
+    </div><!-- /menu-inner -->
+  </div>
+</section>
+
+<!-- ============================================================
+     MENÚ DEL DÍA
+============================================================ -->
+<section class="dia-section" id="menu-del-dia" aria-labelledby="dia-title">
+  <div class="container">
+    <div class="dia-inner">
+
+      <div class="dia-price-card gsap-fade" aria-label="Precio del menú del día: 15 euros">
+        <p class="dia-price-label">Menú del día</p>
+        <div class="dia-price-num">
+          <span class="dia-price-sym">€</span>15
+        </div>
+        <p class="dia-price-note">Postre o café<br>+ bebida incluida</p>
+      </div>
+
+      <div class="dia-content">
+        <header>
+          <span class="eyebrow gsap-fade">De martes a viernes</span>
+          <h2 class="section-title gsap-fade" id="dia-title">El menú del día<br>que te quita el hambre</h2>
+        </header>
+
+        <div class="dia-meta gsap-fade">
+          <div class="dia-meta-row">
+            <i class="fa-solid fa-clock"></i>
+            <span>Disponible de <strong>13:00 a 16:00</strong>, de martes a viernes</span>
+          </div>
+          <div class="dia-meta-row">
+            <i class="fa-solid fa-tag"></i>
+            <span>Solo <strong>15 €</strong> con postre o café y bebida</span>
+          </div>
+        </div>
+
+        <div class="dia-cols gsap-fade">
+          <div>
+            <p class="dia-col-title">Primeros</p>
+            <ul class="dia-list">
+              <li>Ensalada fresca de aguacate y maíz</li>
+              <li>Totopos con guacamole casero</li>
+              <li>Sopa azteca tradicional</li>
+              <li>Quesadillas clásicas</li>
+            </ul>
+          </div>
+          <div>
+            <p class="dia-col-title">Segundos</p>
+            <ul class="dia-list">
+              <li>Trío de tacos mexicanos</li>
+              <li>Tacos crujientes de pollo</li>
+              <li>Tinga de pollo casera</li>
+              <li>Fajitas del día</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dia-includes gsap-fade">
+          <strong>Incluye:</strong> postre o café + agua, caña o refresco.<br>
+          La selección varía según disponibilidad. Consúltanos en sala o por WhatsApp.
+        </div>
+
+      </div><!-- /dia-content -->
+    </div><!-- /dia-inner -->
+  </div>
+</section>
+
+<!-- ============================================================
+     GALERÍA
+============================================================ -->
+<section class="galeria" id="galeria" aria-labelledby="galeria-title">
+  <div class="container">
+    <header class="galeria-header">
+      <span class="eyebrow gsap-fade">Ambiente y sabor</span>
+      <h2 class="section-title gsap-fade" id="galeria-title">Así se vive La Cantina</h2>
+      <p class="section-sub gsap-fade">
+        Colores, murales, música y platos que entran por los ojos. Porque comer también es una fiesta.
+      </p>
+    </header>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gi">
+        <img src="assets/to-use/img2.png"
+             alt="Fajitas de pollo con arroz y tortillas — plato estrella de La Cantina de Fredy's"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/raw/photos_webp/the%20best/cantina-photo-05.webp"
+             alt="Margaritas con borde de tajín y limón"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/to-use/img1.png"
+             alt="Bar de La Cantina con cervezas y cócteles mexicanos"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/raw/photos_webp/cantina-photo-13.webp"
+             alt="Interior del restaurante La Cantina de Fredy's con murales mexicanos"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/raw/photos_webp/the%20best/cantina-photo-09.webp"
+             alt="Totopos La Cantina — plato insignia con birria y guacamole"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/raw/photos_webp/the%20best/cantina-photo-14.webp"
+             alt="Micheladas con Corona y tajín"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/to-use/img5.png"
+             alt="Decoración cantina: Vive cada momento, Ríe cada día, Ama siempre"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+      <div class="gi">
+        <img src="assets/raw/photos_webp/cantina-photo-17.webp"
+             alt="Margaritas en jarra con copas y mantel serape"
+             loading="lazy" decoding="async">
+        <div class="gi-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Tira horizontal adicional -->
+    <div class="gallery-strip-wrap">
+      <div class="gallery-strip" role="list" aria-label="Más fotos de La Cantina">
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-01.webp" alt="Tacos al pastor" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-02.webp" alt="Margaritas variadas" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-03.webp" alt="Bar y cócteles" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-08.webp" alt="Totopos con guacamole" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-10.webp" alt="Cerveza Modelo" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-12.webp" alt="Margarita frozen" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-15.webp" alt="Agua fresca de limón" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/cantina-photo-16.webp" alt="Agua fresca con mural de Frida Kahlo" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/to-use/img6.png" alt="Micheladas" loading="lazy" decoding="async">
+        </div>
+        <div class="strip-item" role="listitem">
+          <img src="assets/raw/photos_webp/the%20best/cantina-photo-11.webp" alt="Decoración La Cantina" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     AMBIENTE
+============================================================ -->
+<section class="ambiente" id="ambiente" aria-labelledby="ambiente-title">
+  <div class="container">
+    <div class="ambiente-inner">
+
+      <div class="ambiente-img-stack gsap-fade">
+        <div class="ambiente-img-main">
+          <img src="assets/raw/photos_webp/cantina-photo-13.webp"
+               alt="Interior vibrante del restaurante La Cantina de Fredy's con murales mexicanos y barra de bar"
+               loading="lazy" decoding="async">
+        </div>
+        <div class="ambiente-img-float">
+          <img src="assets/to-use/img5.png"
+               alt="Cartel decorativo: Vive, Ríe, Ama"
+               loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <div class="ambiente-text">
+        <span class="eyebrow gsap-fade">Más que un restaurante</span>
+        <h2 class="section-title gsap-fade" id="ambiente-title">Un pedazo de México<br>en cada rincón</h2>
+        <blockquote class="ambiente-quote gsap-fade">
+          "Vive cada momento. Ríe cada día. Ama siempre."
+        </blockquote>
+        <div class="ambiente-features gsap-fade">
+          <div class="af-item">
+            <i class="fa-solid fa-palette"></i>
+            <span>Murales artísticos mexicanos pintados a mano</span>
+          </div>
+          <div class="af-item">
+            <i class="fa-solid fa-music"></i>
+            <span>Música mexicana en vivo algunos días de la semana</span>
+          </div>
+          <div class="af-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Ambiente familiar y grupos — perfecta para celebrar</span>
+          </div>
+          <div class="af-item">
+            <i class="fa-solid fa-pepper-hot"></i>
+            <span>Recetas tradicionales con ingredientes importados de México</span>
+          </div>
+          <div class="af-item">
+            <i class="fa-solid fa-glass-water"></i>
+            <span>Barra completa de bebidas mexicanas: margaritas, micheladas y aguas frescas</span>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn-primary gsap-fade">
+          <i class="fa-solid fa-location-dot"></i> Cómo llegar
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HORARIO
+     TODO: Confirmar horario real del restaurante
+============================================================ -->
+<section class="horario" id="horario" aria-labelledby="horario-title">
+  <div class="container">
+    <header class="horario-header">
+      <span class="eyebrow gsap-fade">Cuándo encontrarnos</span>
+      <h2 class="section-title gsap-fade" id="horario-title">Horario</h2>
+      <p class="section-sub gsap-fade">
+        Pásate a comer, a cenar o a compartir unos antojitos. Siempre hay un hueco para ti.
+      </p>
+    </header>
+
+    <div class="horario-grid" id="horario-grid">
+      <!-- TODO: Confirmar horario real del restaurante -->
+      <div class="horario-card" data-day="1">
+        <p class="horario-day">Lunes</p>
+        <p class="horario-time">Consultar</p>
+        <p class="horario-note">Sujeto a disponibilidad</p>
+      </div>
+      <div class="horario-card" data-day="2">
+        <p class="horario-day">Martes</p>
+        <p class="horario-time">13:00 – 16:00</p>
+        <p class="horario-note">Menú del día disponible</p>
+      </div>
+      <div class="horario-card" data-day="3">
+        <p class="horario-day">Miércoles</p>
+        <p class="horario-time">13:00 – 16:00</p>
+        <p class="horario-note">Menú del día disponible</p>
+      </div>
+      <div class="horario-card" data-day="4">
+        <p class="horario-day">Jueves</p>
+        <p class="horario-time">13:00 – 16:00</p>
+        <p class="horario-note">Menú del día disponible</p>
+      </div>
+      <div class="horario-card" data-day="5">
+        <p class="horario-day">Viernes</p>
+        <p class="horario-time">13:00 – 16:00</p>
+        <p class="horario-note">Consultar horario de cena</p>
+      </div>
+      <div class="horario-card" data-day="6">
+        <p class="horario-day">Sábado</p>
+        <p class="horario-time">Consultar</p>
+        <p class="horario-note">Sujeto a disponibilidad</p>
+      </div>
+      <div class="horario-card" data-day="0">
+        <p class="horario-day">Domingo</p>
+        <p class="horario-time">Consultar</p>
+        <p class="horario-note">Sujeto a disponibilidad</p>
+      </div>
+    </div>
+
+    <div class="horario-note-banner gsap-fade">
+      <i class="fa-solid fa-circle-info"></i>
+      <span>Los horarios pueden variar según temporada. Para reservas y consultas, escríbenos por <strong>WhatsApp</strong> o llámanos.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+============================================================ -->
+<section class="contacto" id="contacto" aria-labelledby="contacto-title">
+  <div class="container">
+    <div class="contacto-inner">
+
+      <div class="contacto-info">
+        <header>
+          <span class="eyebrow gsap-fade">Encuéntranos</span>
+          <h2 class="section-title gsap-fade" id="contacto-title">Ven a compartir mesa</h2>
+          <p class="section-sub gsap-fade">
+            Reservas, consultas, grupos o simplemente decir hola. Estamos aquí para ti.
+          </p>
+        </header>
+
+        <div class="c-item gsap-fade">
+          <div class="c-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <p class="c-label">Dirección</p>
+            <!-- TODO: Actualizar con dirección real -->
+            <p class="c-value" id="address-display">Dirección pendiente de confirmar</p>
+            <p class="c-note">Madrid / Toledo / España</p>
+          </div>
+        </div>
+
+        <div class="c-item gsap-fade">
+          <div class="c-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p class="c-label">Teléfono</p>
+            <!-- TODO: Actualizar con teléfono real -->
+            <a class="c-value" id="phone-link" href="tel:+34XXXXXXXXX">+34 XXX XXX XXX</a>
+            <p class="c-note">Llamadas y WhatsApp</p>
+          </div>
+        </div>
+
+        <div class="c-item gsap-fade">
+          <div class="c-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <p class="c-label">WhatsApp</p>
+            <a class="c-value" id="wa-link" href="#" target="_blank" rel="noopener">Escríbenos ahora</a>
+            <p class="c-note">Respondemos lo antes posible</p>
+          </div>
+        </div>
+
+        <div class="c-item gsap-fade">
+          <div class="c-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <p class="c-label">Horario</p>
+            <p class="c-value">Mar – Vie · 13:00 – 16:00</p>
+            <p class="c-note">Sáb, Dom y cenas: consultar disponibilidad</p>
+          </div>
+        </div>
+
+        <div class="gsap-fade">
+          <p class="c-label social-heading">Síguenos</p>
+          <div class="social-row">
+            <!-- TODO: Actualizar con URLs reales de redes sociales -->
+            <a href="#" class="social-link" aria-label="Instagram de La Cantina de Fredy's" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook de La Cantina de Fredy's" target="_blank" rel="noopener">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok de La Cantina de Fredy's" target="_blank" rel="noopener">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" id="maps-btn" target="_blank" rel="noopener" class="btn btn-primary gsap-fade">
+          <i class="fa-solid fa-map-location-dot"></i> Cómo llegar
+        </a>
+      </div>
+
+      <!-- Mapa -->
+      <div class="map-frame gsap-fade" id="map-frame">
+        <!-- TODO: Reemplaza este div con el iframe real de Google Maps una vez tengas la dirección -->
+        <!-- Para obtener el iframe: Google Maps → Compartir → Insertar un mapa → Copiar HTML -->
+        <div class="map-placeholder-content">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Mapa disponible una vez confirmada la dirección del restaurante.</p>
+          <a href="#" id="maps-btn-2" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-solid fa-diamond-turn-right"></i> Ver en Google Maps
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" aria-label="Pie de página">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/raw/logo_cantina_fredys_transparent.webp"
+             alt="La Cantina de Fredy's"
+             loading="lazy">
+        <p>
+          Restaurante mexicano auténtico con tacos, fajitas, quesadillas, margaritas y menú del día.
+          Sabor, color y ambiente de cantina mexicana.
+        </p>
+        <p class="footer-seo">
+          Restaurante mexicano · tacos al pastor · cochinita pibil · fajitas · quesadillas ·
+          margaritas · micheladas · aguas frescas · birria de ternera · menú del día · cantina mexicana
+        </p>
+      </div>
+
+      <nav aria-label="Navegación footer — secciones">
+        <p class="footer-col-title">La Cantina</p>
+        <ul class="footer-links">
+          <li><a href="#platos">Platos destacados</a></li>
+          <li><a href="#menu">Carta completa</a></li>
+          <li><a href="#menu-del-dia">Menú del día</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ambiente">El restaurante</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Navegación footer — información">
+        <p class="footer-col-title">Información</p>
+        <ul class="footer-links">
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="assets/raw/MENU%20LA%20CANTINA%20DE%20FREDYS.pdf"
+               target="_blank" rel="noopener" download>Descargar menú</a>
+          </li>
+          <li><a href="#wa-link" id="footer-wa">WhatsApp</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <ul class="footer-links">
+          <!-- TODO: Actualizar con datos reales -->
+          <li><a href="tel:+34XXXXXXXXX" id="footer-phone">+34 XXX XXX XXX</a></li>
+          <li><a href="#contacto">Ver en el mapa</a></li>
+          <li>
+            <div class="social-row">
+              <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2025 <span>La Cantina de Fredy's</span>. Todos los derechos reservados.
+      </p>
+      <p class="footer-copy">
+        Restaurante mexicano auténtico · Comida para compartir · Ambiente de cantina
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float"
+   id="wa-float"
+   href="#"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contactar por WhatsApp con La Cantina de Fredy's">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<!-- ============================================================
+     SCRIPTS
+     CDN libs must load before main.js
+============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
